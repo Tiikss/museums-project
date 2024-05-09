@@ -94,40 +94,90 @@ a {
 }
 
 .main {
+    margin-top: 64px;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 64px;
 }
 
+#myInput {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    background-color: #d9d9d9;
+}
+
+#myInput:focus {
+    outline: 3px solid #d9d9d9;
+}
+
 .dropdown {
-    display: inline-block;
     position: relative;
+    display: inline-block;
+    width: 300px;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-    overflow: auto;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-}
-
-.dropdown:hover .dropdown-content {
     display: block;
+    position: absolute;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #d9d9d9;
+    z-index: 1;
 }
 
 .dropdown-content a {
-    display: block;
-    color: #000000;
-    padding: 5px;
+    color: #0c0c0c;
+    background-color: #d9d9d9;
+    padding: 12px 16px;
     text-decoration: none;
+    display: none;
 }
 
-.dropdown-content a:hover {
-    color: #FFFFFF;
-    background-color: #00A4BD;
+.dropdown a:hover {
+    background-color: #F2613F;
+    color: #0c0c0c;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    transform: translate(-50%, -50%);
+    stroke: #0c0c0c;
+}
+
+.show {
+    display: block;
 }
 
 .card img {
     width: 200px;
+}
+
+footer {
+    padding: 12px 5%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    color: #481E14;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+    padding-right: 10px;
 }

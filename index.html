@@ -9,6 +9,42 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/index.css">
     <title>Museums EU</title>
+
+    <script>
+        function filterFunction() {
+            const input = document.getElementById("myInput");
+            const filter = input.value.toUpperCase();
+            const div = document.getElementById("myDropdown");
+            const a = div.getElementsByTagName("a");
+            for (let i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                console.log(filter);
+                if (filter == "") {
+                    a[i].style.display = "none";
+                } else if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "block";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        };
+
+        function chooseCity(e) {
+            const div = document.getElementById("myDropdown");
+            const input = document.getElementById("myInput");
+
+            input.value = e.textContent;
+
+            const a = div.getElementsByTagName("a");
+            for (let i = 0; i < a.length; i++) {
+                a[i].style.display = "none";
+            }
+        }
+
+    </script>
+
+
+
 </head>
 
 <body>
@@ -33,12 +69,21 @@
 
         <div class="main">
             <div class="dropdown">
-                <button class="city-button">Choose city</button>
-                <div class="dropdown-content">
-                    <a>Berlin</a>
-                    <a>Vienna</a>
-                    <a>Paris</a>
-                    <a>Prague</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="search-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+
+                    <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+                    <a onclick="chooseCity(this)" href="#about">About</a>
+                    <a onclick="chooseCity(this)" href="#base">Base</a>
+                    <a onclick="chooseCity(this)" href="#blog">Blog</a>
+                    <a onclick="chooseCity(this)" href="#contact">Contact</a>
+                    <a onclick="chooseCity(this)" href="#custom">Custom</a>
+                    <a onclick="chooseCity(this)" href="#support">Support</a>
+                    <a onclick="chooseCity(this)" href="#tools">Tools</a>
                 </div>
             </div>
 
@@ -52,7 +97,7 @@
         </div>
 
         <footer>
-            <div>
+            <div class="footer-content">
                 <p>Follow us:</p>
                 <div>
                     <i class="fa-brands fa-facebook"></i>
