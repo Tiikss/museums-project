@@ -1,0 +1,133 @@
+/* Colors */
+/* 0C0C0C
+   481E14
+   9B3922
+   F2613F */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: #d9d9d9;
+    background-color: #0c0c0c;
+}
+
+a {
+    text-decoration: none;
+    color: #2769b5;
+}
+
+/* Header */
+
+.padding-nav {
+    padding: 16px 10%;
+}
+
+.container .nav {
+    background-color: #0c0c0c;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .nav img {
+    height: 50px;
+}
+
+.container .nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container .nav ul li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.container .nav ul li:last-child {
+    margin-right: 0;
+}
+
+.container .nav ul li a {
+    padding: 4px 8px;
+    color: #d9d9d9;
+}
+
+.container .nav ul li a:hover {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.bg-image {
+    height: 100vh;
+    background-image: url("../images/pic1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #d9d9d9;
+    text-align: center;
+    position: relative;
+}
+
+.absolute-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.bg-image h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 56px;
+    text-shadow: black 4px 0 10px;
+}
+
+.bg-image p {
+    margin: 0;
+    text-shadow: black 4px 0 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+.card img {
+    width: 200px;
+}
