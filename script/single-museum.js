@@ -7,7 +7,7 @@ const slider = function () {
     let currentSlide = 0;
     let maxSlide = slides.length;
 
-    // slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
+    slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
     /*
     const createDots = function () {
         slides.forEach(function (_, i) {
