@@ -86,28 +86,44 @@ a {
 }
 
 .about-us-div {
-    background-color: #F2613F;
-    color: #0c0c0c;
-    height: 200px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    background-color: #0c0c0c;
+    color: #d9d9d9;
+    height: 300px;
     justify-content: center;
     align-content: center;
     padding: 20px;
 }
 
 .about-us-div h1 {
+    text-align: right;
     font-size: 36px;
     font-weight: bold;
     padding-bottom: 15px;
 }
 
 .about-us-div p {
+    text-align: right;
     font-size: 20px;
 }
 
 .story-div {
-    background-color: #481E14;
-    color: #d9d9d9;
-    height: 200px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    background-color: #d9d9d9;
+    color: #0c0c0c;
+    height: 300px;
     justify-content: center;
     align-content: center;
     padding: 20px;
@@ -124,15 +140,24 @@ a {
 }
 
 .mission-div {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
     background-color: #0c0c0c;
     color: #d9d9d9;
     justify-content: center;
     align-content: center;
     padding: 20px;
     position: relative;
+    height: 300px;
 }
 
 .mission-div h1 {
+    text-align: right;
     font-size: 36px;
     font-weight: bold;
     padding-bottom: 15px;
@@ -140,10 +165,22 @@ a {
 
 .mission-div p {
     font-size: 20px;
+    text-align: right;
+}
+
+.about-us-div img {
+    width: 300px;
+    height: 200px;
+}
+
+.story-div img {
+    width: 300px;
+    height: 200px;
 }
 
 .mission-div img {
-    width: 400px;
+    width: 300px;
+    height: 200px;
 }
 
 footer {
