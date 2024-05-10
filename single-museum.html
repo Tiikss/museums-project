@@ -12,6 +12,7 @@
         />
         <link rel="stylesheet" href="./style/single-museum.css" />
         <title>Museums EU</title>
+        <script src="./script/single-museum.js" defer></script>
     </head>
 
     <body>
@@ -45,6 +46,11 @@
                             class="carousel-img"
                             src="./images/pic1.jpg"
                             alt="Louvre3"
+                        />
+                        <img
+                            class="carousel-img"
+                            src="./images/pic_2.jpg"
+                            alt="Louvre4"
                         />
                         <img
                             class="carousel-img"
@@ -87,15 +93,16 @@
                     </button>
 
                     <div class="dots">
-                        <button class="dot dot--fill">&nbsp;</button>
-                        <button class="dot">&nbsp;</button>
-                        <button class="dot">&nbsp;</button>
-                        <button class="dot">&nbsp;</button>
+                        <button class="dot dot__0 dot--fill">&nbsp;</button>
+                        <button class="dot dot__1">&nbsp;</button>
+                        <button class="dot dot__2">&nbsp;</button>
+                        <button class="dot dot__3">&nbsp;</button>
+                        <button class="dot dot__4">&nbsp;</button>
                     </div>
                 </div>
 
                 <div class="info">
-                    <p>
+                    <p class="museum-text">
                         The Louvre, or the Louvre Museum, is the world's largest
                         art museum and a historic monument in Paris, France. A
                         central landmark of the city, it is located on the Right
@@ -106,7 +113,7 @@
                         visitors, making it the most visited museum in the
                         world.
                     </p>
-                    <p>
+                    <p class="museum-text">
                         The museum is housed in the Louvre Palace, originally
                         built as the Louvre castle in the late 12th to 13th
                         century under Philip II. Remnants of the fortress are
@@ -125,7 +132,7 @@
                         first of a series of salons. The Académie remained at
                         the Louvre for 100 years.
                     </p>
-                    <p>
+                    <p class="museum-text">
                         During the French Revolution, the National Assembly
                         decreed that the Louvre should be used as a museum to
                         display the nation's masterpieces. The museum opened on
@@ -140,9 +147,6 @@
                         further increased during the reigns of Louis
                     </p>
                 </div>
-                <button onclick="handleClick(this)" class="next-button">
-                    Next image
-                </button>
             </div>
 
             <footer>
