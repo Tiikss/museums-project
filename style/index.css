@@ -157,8 +157,121 @@ a {
     display: block;
 }
 
-.card img {
-    width: 200px;
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    margin-top: 64px;
+} 
+
+.box img {
+    width: 300px;
+}
+
+.icon {
+    list-style: none;
+}
+
+.box{
+    font-family: 'Cabin', sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.box:before{
+    content: '';
+    background: linear-gradient(to right,#F2613F,#481E14);
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transform: skew(-45deg) scaleX(0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.box:hover:before{ 
+    transform: skew(-45deg) scaleX(1); 
+    transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.box img{
+    transform: scale(1);
+    transition: all 0.3s ease 0s;
+}
+
+.box:hover img{
+    transform: scale(1.2);
+    filter: grayscale(0.7) blur(2px);
+}
+
+.box .box-content{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+
+.box:hover .box-content{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    transition-delay: 0.2s;
+}
+
+.box .title{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    margin: 0 0 7px;
+}
+
+.box .post{
+    font-size: 16px;
+    font-style: italic;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 13px;
+    display: block;
+}
+
+.box .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.box .icon li{
+    margin: 0 4px;
+    display: inline-block;
+}
+
+.box .icon li a{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+    border: 2px solid #fff;
+    border-radius: 0 0 50% 50%;
+    display: block;
+    transition: all 0.3s;
+}
+
+.box .icon li a:hover{
+    background: #F2613F;
+    box-shadow: 0 0 10px #fff;
 }
 
 footer {
