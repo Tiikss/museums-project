@@ -19,7 +19,6 @@ function filterFunction() {
     if (filter.length == 0) {
         const cardContainer = document.querySelector(".card-container");
         const loadMoreButton = document.querySelector(".load-more-button");
-        console.log("FJSDGHAIJSGHFJESGHHDS");
         cardContainer.innerHTML = "";
         lastId = 1;
         loadMuseums();
