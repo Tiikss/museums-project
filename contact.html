@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="form-div">
-                    <form action="#" method="post">
+                    <form id="myForm">
                         <label for="name" id="lbl-name">Name:</label>
                         <input type="text" id="name" name="name" required>
 
@@ -44,6 +44,7 @@
                         <label for="message" id="lbl-mess">Message:</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
 
+
                         <div class="sumb-div">
                             <input type="submit" value="Submit" id="submit">
                         </div>
@@ -51,6 +52,14 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <h2 id="modal-title">Thank you!</h2>
+            <p id="modal-message">Successfully sent a message!</p>
+        </div>
+
+        <div class="overlay hidden"></div>
 
         <footer>
             <div class="footer-content">
@@ -64,6 +73,8 @@
             <p>&copy; 2024 Museums.EU | All rights reserved | T&J</p>
         </footer>
     </div>
+
+    <script src="./script/contact.js"></script>
 </body>
 
 </html>
