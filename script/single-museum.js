@@ -11,18 +11,7 @@ const slider = function () {
     let maxSlide = slides.length;
 
     slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
-    /*
-    const createDots = function () {
-        slides.forEach(function (_, i) {
-            document
-                .querySelector(".dots")
-                .insertAdjacentHTML(
-                    "beforeend",
-                    `<button class="dots__dot" data-slide="${i}"></button>`
-                );
-        });
-    };
-*/
+
     const activateDot = function (slide) {
         document
             .querySelectorAll(".dot")
@@ -93,7 +82,6 @@ const loadData = (id) => {
         .then((response) => response.json())
         .then((data) => {
             museum = data.museums.filter((el) => el.id == id);
-            console.log(museum[0]);
             setValues(museum[0]);
         });
 };
