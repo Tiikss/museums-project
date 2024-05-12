@@ -284,11 +284,11 @@ a {
 }
 
 .load-more-button {
-    padding: 16px 24px;
-    font-size: 1.3em;
+    padding: 10px 10px;
+    font-size: 15px;
     background-color: #d9d9d9;
     color: #0c0c0c;
-    border-radius: 24px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
 
@@ -298,7 +298,7 @@ a {
 
 .load-more-button:hover {
     background-color: #f2613f;
-    color: #d9d9d9;
+    color: #0c0c0c;
     scale: 1.1;
     transition: scale 0.3s;
 }
