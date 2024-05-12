@@ -9,10 +9,15 @@ const emailField = document.querySelector("#email");
 const messageField = document.querySelector("#message");
 const modalTitle = document.querySelector("#modal-title");
 const modalMessage = document.querySelector("#modal-message");
+const myForm = document.getElementById("myForm");
 
 const closeModal = () => {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
+
+  if (myForm.checkValidity()) {
+      window.location.href='index.html';
+  }
 };
 
 const openModal = (event) => {
