@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #d9d9d9;
     background-color: #0c0c0c;
 }
@@ -80,6 +80,7 @@ a {
 }
 
 .bg-image h1 {
+    font-family: "Dream Avenue", "Times New Roman", Times, serif;
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 56px;
@@ -109,6 +110,7 @@ a {
     border: none;
     border-bottom: 1px solid #d9d9d9;
     background-color: #d9d9d9;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #myInput:focus {
@@ -180,7 +182,6 @@ a {
 .box {
     width: 300px;
     height: 200px;
-    font-family: "Cabin", sans-serif;
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
@@ -291,6 +292,7 @@ a {
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
 
     scale: 1;
     transition: scale 0.3s;

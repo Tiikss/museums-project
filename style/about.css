@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #d9d9d9;
     background-color: #0c0c0c;
 }
@@ -74,6 +74,7 @@ a {
 }
 
 .bg-image h1 {
+    font-family: "Dream Avenue", "Times New Roman", Times, serif;
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 56px;
